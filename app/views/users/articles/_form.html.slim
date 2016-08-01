@@ -1,0 +1,11 @@
+.row
+  .column.article-form.block
+    h2 = title(article.title || "New Article")
+
+    = simple_form_for([:users, article]) do |f|
+      .form-inputs
+        = f.input :title
+        = f.input :text
+
+      .form-actions
+        = f.button :submit, data: { disable_with: "Please wait..." }

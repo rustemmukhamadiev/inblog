@@ -1,0 +1,11 @@
+article.article.block
+  h1= link_to article.title, article, class: "article-title-link"
+  .description= article.description
+
+  .read-more
+    = link_to "Read more...", article, class: "read-more-link"
+
+  .article-info
+    .left
+      span.posted-by
+        = article.posted_by
