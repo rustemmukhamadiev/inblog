@@ -1,12 +1,12 @@
-ul.right
+ul.right.user-menu
   - if user_signed_in?
     li.has-dropdown
       a.user-dropdown(href="#") = current_user.full_name_with_email
       ul.dropdown
-        li
-          = link_to "Edit profile", edit_user_registration_path
-        li
-          = link_to "Sign out", destroy_user_session_path
+        li.drops
+          = link_to "Edit profile", edit_user_registration_path, class: "dropdown-link"
+        li.drops
+          = link_to "Sign out", destroy_user_session_path, class: "dropdown-link"
   - else
     = active_link_to "Sign in", new_user_session_path, active: :exclusive, wrap_tag: :li
     = active_link_to "Sign up", new_user_registration_path, active: :exclusive, wrap_tag: :li

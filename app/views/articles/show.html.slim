@@ -1,0 +1,12 @@
+article.article.block
+  h1.article-title-link
+    = title(article.title)
+
+  .description= article.text
+
+  .article-info
+    .left
+      span.posted-by
+        = article.posted_by
+    .right
+      = link_to "Edit", edit_users_article_path if policy(article).owner?
