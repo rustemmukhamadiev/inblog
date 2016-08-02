@@ -2,6 +2,10 @@ body {
   background: $grey;
 }
 
+#root {
+  min-height: 100%;
+}
+
 .block {
   margin: rem-calc(15) 0;
   padding: rem-calc(15);

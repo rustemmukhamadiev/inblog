@@ -1,9 +1,8 @@
 footer {
   clear: both;
 
-  min-height: 40px;
+  height: rem-calc(50);;
 
-  p {
-    margin: 0;
-  }
+  background-color: $white;
+  box-shadow: 0 3px 13px $dark-grey;
 }
