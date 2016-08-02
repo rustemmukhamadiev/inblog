@@ -1,0 +1,11 @@
+body {
+  background: $grey;
+}
+
+.block {
+  margin: rem-calc(15) 0;
+  padding: rem-calc(15);
+
+  background: $white;
+  box-shadow: 0 3px 13px $dark-grey;
+}

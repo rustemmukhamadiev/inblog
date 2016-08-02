@@ -6,8 +6,12 @@ article {
     font-weight: bold;
   }
 
-  .article-title {
+  .article-title-link {
     color: $black;
+  }
+
+  .description {
+    color: $black-grey;
   }
 
   a:hover {
@@ -24,6 +28,9 @@ article {
     @include clearfix;
 
     margin: rem-calc(10) 0;
+    padding-top: rem-calc(10);
+
+    border-top: 1px solid $grey;
 
     a {
       border-bottom: 1px dotted;

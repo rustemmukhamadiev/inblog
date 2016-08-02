@@ -1,6 +1,6 @@
 .row
-  .column.article-form.block
-    h2 = title(article.title || "New Article")
+  article.block
+    h1.article-title-link = title(article.title || "New Article")
 
     = simple_form_for([:users, article]) do |f|
       .form-inputs
