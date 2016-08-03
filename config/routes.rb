@@ -9,5 +9,6 @@ Rails.application.routes.draw do
 
   resources :articles, only: %i(index show)
 
+  get "about", to: "pages#about"
   root to: "articles#index"
 end
