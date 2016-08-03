@@ -66,6 +66,17 @@ Rails.application.configure do
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
 
+  config.paperclip_defaults = {
+    storage: :s3,
+    s3_host_name: ENV["S3_HOST_NAME"],
+    s3_protocol: "https",
+    s3_credentials: {
+      bucket: ENV["S3_BUCKET"],
+      access_key_id: ENV["S3_ACCESS_KEY"],
+      secret_access_key: ENV["S3_SECRET_KEY"]
+    }
+  }
+
   # Enable Email delivery via custom SMTP server or via SendGrid by default
   if ENV["SMTP_USERNAME"] || ENV["SENDGRID_USERNAME"]
     config.action_mailer.delivery_method = :smtp
