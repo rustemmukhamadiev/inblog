@@ -9,7 +9,7 @@ class UserDecorator < ApplicationDecorator
   def thumb_avatar
     h.image_tag(
       object.avatar.url(:thumb),
-      class: "round-avatar thumb-avatar"
+      class: "round-avatar avatar-thumb"
     )
   end
 end
