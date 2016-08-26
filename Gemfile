@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 ruby "2.3.1"
 
-gem "rails", "4.2.6"
+gem "rails", "4.2.7.1"
 gem "pg"
 
 # assets
@@ -34,7 +34,7 @@ gem "health_check"
 gem "interactor"
 gem "kaminari"
 gem "memory_profiler"
-gem "paperclip", "~> 5.0.0"
+gem "paperclip", "~> 4.3"
 gem "puma"
 gem "pundit"
 gem "rack-canonical-host"
