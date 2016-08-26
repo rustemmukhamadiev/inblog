@@ -1,7 +1,9 @@
 ul.right.user-menu
   - if user_signed_in?
     li.has-dropdown
-      a.user-dropdown(href="#") = current_user.full_name_with_email
+      a.user-dropdown(href="#")
+        = current_user.thumb_avatar
+        = current_user.full_name_with_email
       ul.dropdown
         li.drops
           = link_to "Edit profile", edit_user_registration_path, class: "dropdown-link"
