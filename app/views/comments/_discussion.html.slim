@@ -1,0 +1,8 @@
+#discussion
+  .discussion-head
+    | Comments
+
+  = render("users/comments/form", comment: comment) if user_signed_in?
+
+  div(data-fragment-id="discussion")
+    = render(partial: "comments/comment", collection: comments) || "There are no comments"
