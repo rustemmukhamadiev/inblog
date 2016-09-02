@@ -14,10 +14,4 @@ feature "Edit Article" do
 
     expect(page).to have_content("Article was successfully updated.")
   end
-
-  scenario "User edits a article another user" do
-    visit edit_users_article_path(another_article)
-
-    expect(current_path).to eq root_path
-  end
 end
