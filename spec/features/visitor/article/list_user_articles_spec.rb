@@ -1,7 +1,7 @@
 require "rails_helper"
 
 feature "List user articles" do
-  let(:user) { create :user }
+  let!(:user) { create :user }
   let!(:articles) { create_list(:article, 2, user: user) }
   let(:article) { articles.last.decorate }
 

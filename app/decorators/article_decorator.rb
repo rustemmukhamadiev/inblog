@@ -14,8 +14,10 @@ class ArticleDecorator < ApplicationDecorator
     h.time_ago_in_words(object.created_at)
   end
 
-  def comment_count
-    "Сomments: #{object.comments.count}"
+  def comment_count_link
+    h.link_to("#{h.article_path(object)}#discussion") do
+      ("Сomments: " + object.comments.count.to_s).html_safe
+    end
   end
 
   def username_link
