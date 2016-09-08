@@ -27,7 +27,7 @@ article {
   .article-info {
     @include clearfix;
 
-    margin: rem-calc(10) 0;
+    margin-top: rem-calc(10);
     padding-top: rem-calc(10);
 
     border-top: 1px solid $grey;

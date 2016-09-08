@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   end
 
   resources :articles, only: %i(index show)
+  resource :feedback, only: %i(new create)
 
   get "about", to: "pages#about"
   root to: "articles#index"

@@ -1,8 +1,9 @@
 footer
   .row
     .columns
-      .left
+      .brand.left
         | &copy; Flatstack #{Time.zone.today.year}
 
-      .right
+      .links.right
+        = link_to "Contact Us", new_feedback_path
         = link_to "About Us", about_path
