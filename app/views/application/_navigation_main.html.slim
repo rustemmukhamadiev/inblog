@@ -1,5 +1,5 @@
 ul.left
   - if user_signed_in?
     = active_link_to "Home", root_path, active: :exclusive, wrap_tag: :li
-    = active_link_to "Articles", articles_path, active: :exclusive, wrap_tag: :li
+    = active_link_to "My Articles", username_articles_path(current_user.username), active: :exclusive, wrap_tag: :li
     = active_link_to "Create Article", new_users_article_path, active: :exclusive, wrap_tag: :li

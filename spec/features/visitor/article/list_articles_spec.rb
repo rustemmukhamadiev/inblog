@@ -9,6 +9,5 @@ feature "List articles" do
   scenario "Visitor shows lists articles on home page" do
     expect(page).to have_content(article.title)
     expect(page).to have_content(article.description)
-    expect(page).to have_content(article.posted_by)
   end
 end

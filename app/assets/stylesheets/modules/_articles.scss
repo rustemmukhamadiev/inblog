@@ -3,7 +3,6 @@ article {
     margin-top: 0;
 
     font-size: rem-calc(28);
-    font-weight: bold;
   }
 
   .article-title-link {
@@ -27,17 +26,13 @@ article {
   .article-info {
     @include clearfix;
 
-    margin-top: rem-calc(10);
+    margin-top: rem-calc(16);
     padding-top: rem-calc(10);
 
     border-top: 1px solid $grey;
 
-    a {
-      border-bottom: 1px dotted;
+    .right {
+      margin: rem-calc(12) 0;
     }
   }
-}
-
-.comments-count {
-  margin: rem-calc(10) 0;
 }
