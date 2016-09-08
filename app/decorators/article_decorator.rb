@@ -3,7 +3,7 @@ class ArticleDecorator < ApplicationDecorator
   delegate :thumb_avatar, to: :user, prefix: true
 
   def description
-    text.truncate(160, separator: " ")
+    text.truncate(280, separator: " ")
   end
 
   def posted_by
@@ -16,6 +16,12 @@ class ArticleDecorator < ApplicationDecorator
 
   def comment_count
     "Сomments: #{object.comments.count}"
+  end
+
+  def username_link
+    h.link_to(h.username_articles_path(user.username)) do
+      (user.full_name + " | " + formatted_created_at + " ago").html_safe
+    end
   end
 
   private

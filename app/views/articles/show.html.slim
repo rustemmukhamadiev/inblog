@@ -9,7 +9,7 @@
       .left
         = article.user_thumb_avatar
         span.posted-by
-          = article.posted_by
+          = article.username_link
       .right
         = link_to "Edit", edit_users_article_path if policy(article).owner?
 

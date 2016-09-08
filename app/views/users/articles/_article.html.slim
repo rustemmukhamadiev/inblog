@@ -3,13 +3,13 @@ article.article.block
   .description= article.description
 
   .read-more
-    = link_to "Click to continue…", article, class: "read-more-link"
+    = link_to "Read more...", article, class: "read-more-link"
 
   .article-info
     .left
       = article.user_thumb_avatar
       span.posted-by
-        = article.username_link
+        = article.posted_by
     .right
       .comments-count
         = article.comment_count

@@ -1,5 +1,5 @@
 class UserDecorator < ApplicationDecorator
-  delegate :id, :full_name, :email, :avatar
+  delegate :id, :full_name, :username, :email, :avatar
   delegate :url, :present?, to: :avatar, prefix: true
 
   def full_name_with_email

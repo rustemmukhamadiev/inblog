@@ -1,5 +1,9 @@
 body {
-  background: $grey;
+  background: $white;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .root {
@@ -11,5 +15,4 @@ body {
   padding: rem-calc(15);
 
   background: $white;
-  box-shadow: 0 3px 13px $dark-grey;
 }
