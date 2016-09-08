@@ -1,14 +1,18 @@
 footer {
   clear: both;
 
-  height: rem-calc(50);
+  height: $footer-height;
 
   background-color: $white;
   box-shadow: 0 3px 13px $dark-grey;
 
-  .left,
-  .right {
-    font-size: rem-calc(14);
-    line-height: 2.8125rem;
+  .brand {
+    line-height: $footer-height;
+  }
+
+  .links a {
+    margin-left: rem-calc(10);
+
+    line-height: $footer-height;
   }
 }

@@ -11,4 +11,5 @@ Rails.application.routes.draw do
 
   get ":username", to: "users/articles#index", as: "username_articles"
   resources :articles, only: %i(index show)
+  resource :feedback, only: %i(new create)
 end
