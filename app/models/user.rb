@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
   validates :username,
     presence: true,
     uniqueness: true,
-    format: { with: /\A[a-z]+[a-z_\.]*[a-z]+\z/, message: "only allows letters" }
+    format: { with: /\A[a-z]+[a-z]+\z/, message: "only allows letters" }
 
   has_attached_file :avatar, styles: { medium: "300x300>", thumb: "100x100>" }, default_url: ":style/missing_photo.png"
 
