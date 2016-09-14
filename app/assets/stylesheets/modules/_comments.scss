@@ -1,7 +1,5 @@
 .discussion-head {
   font-size: rem-calc(20);
-
-  font-weight: bold;
 }
 
 .comment {
@@ -20,5 +18,7 @@
 
   .comment-owner {
     padding: .5rem;
+
+    font-weight: 200;
   }
 }

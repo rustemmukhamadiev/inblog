@@ -1,6 +1,7 @@
 .comment
   .comment-owner
     = comment.user_thumb_avatar
-    = comment.username_link
+    = link_to "#{comment.user_full_name} | #{comment.formatted_created_at} ago",
+      username_articles_path(comment.user_username)
   .comment-body
     = comment.text
