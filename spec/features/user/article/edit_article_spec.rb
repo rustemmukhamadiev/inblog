@@ -12,6 +12,6 @@ feature "Edit Article" do
     fill_form(:article, title: "New title", text: "New text")
     click_on "Update Article"
 
-    expect(page).to have_content("Article was successfully updated.")
+    expect(page).to have_content("Article was successfully updated")
   end
 end
