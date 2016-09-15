@@ -12,4 +12,4 @@ article.article.block
         = article.posted_by
     .right
       .comments-count
-        = article.comment_count_link
+        = link_to "Сomments: #{article.comments_count}", article_path(article, anchor: "discussion")

@@ -9,7 +9,8 @@
       .left
         = article.user_thumb_avatar
         span.posted-by
-          = article.username_link
+          = link_to "#{article.user_full_name} | #{article.formatted_created_at} ago",
+            username_articles_path(article.user_username)
       .right
         = link_to "Edit", edit_users_article_path if policy(article).owner?
 

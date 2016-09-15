@@ -9,7 +9,8 @@ article.article.block
     .left
       = article.user_thumb_avatar
       span.posted-by
-        = article.username_link
+        = link_to "#{article.user_full_name} | #{article.formatted_created_at} ago",
+          username_articles_path(article.user_username)
     .right
       .comments-count
-        = article.comment_count_link
+        = link_to "Сomments: #{article.comments_count}", article_path(article, anchor: "discussion")

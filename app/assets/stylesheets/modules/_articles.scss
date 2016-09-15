@@ -1,4 +1,6 @@
 article {
+  margin-bottom: rem-calc(18);
+
   h1 {
     margin-top: 0;
 
@@ -30,6 +32,8 @@ article {
     padding-top: rem-calc(10);
 
     border-top: 1px solid $grey;
+
+    font-weight: 200;
 
     .right {
       margin: rem-calc(12) 0;
