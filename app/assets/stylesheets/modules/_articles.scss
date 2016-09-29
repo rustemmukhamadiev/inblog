@@ -8,15 +8,15 @@ article {
   }
 
   .article-title-link {
-    color: $black;
+    color: $color-title;
   }
 
   .description {
-    color: $black-grey;
+    color: $color-description;
   }
 
   a:hover {
-    color: $blue;
+    color: $color-hover;
   }
 
   .read-more {
@@ -31,7 +31,7 @@ article {
     margin-top: rem-calc(16);
     padding-top: rem-calc(10);
 
-    border-top: 1px solid $grey;
+    border-top: 1px solid $color-border;
 
     font-weight: 200;
 

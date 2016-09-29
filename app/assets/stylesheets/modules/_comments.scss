@@ -3,7 +3,7 @@
 }
 
 .comment {
-  border-bottom: 1px solid $grey;
+  border-bottom: 1px solid $color-border;
 
   &:last-child {
     border-bottom: 0;
@@ -13,7 +13,7 @@
     margin-left: .8rem;
     padding: .5rem;
 
-    color: $black-grey;
+    color: $color-description;
   }
 
   .comment-owner {
