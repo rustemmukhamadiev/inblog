@@ -12,8 +12,7 @@ gem "foundation-icons-sass-rails"
 gem "foundation-rails"
 gem "fragments.js", git: "https://github.com/fs/fragments.js.git"
 gem "jquery-rails"
-gem "sass-rails", "~> 5.0.0"
-gem "skim"
+gem "sass-rails", "~> 5.0.0", ">= 5.0.6"
 gem "therubyracer", platforms: :ruby
 gem "uglifier", ">= 2.7.2"
 
