@@ -23,8 +23,14 @@ gem "metamagic"
 gem "simple_form"
 gem "slim"
 
+# file uploads with Shrine
+gem "aws-sdk"
+gem "fastimage"
+gem "image_processing"
+gem "mini_magick"
+gem "shrine"
+
 # all other gems
-gem "aws-sdk", "< 2.0"
 gem "decent_decoration"
 gem "decent_exposure"
 gem "devise"
@@ -35,7 +41,6 @@ gem "health_check"
 gem "interactor"
 gem "kaminari"
 gem "memory_profiler"
-gem "paperclip", "~> 4.3"
 gem "puma"
 gem "pundit"
 gem "rack-canonical-host"
@@ -60,6 +65,7 @@ group :test do
   gem "launchy"
   gem "rspec-its"
   gem "shoulda-matchers"
+  gem "shrine-memory"
   gem "webmock", require: false
 end
 

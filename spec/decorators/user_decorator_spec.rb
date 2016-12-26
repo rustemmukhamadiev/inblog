@@ -6,7 +6,7 @@ describe UserDecorator do
       full_name: "Alex",
       username: "alexnick",
       email: "test@test.com",
-      avatar: File.new("#{Rails.root}/spec/fixtures/images/image.png"))
+      image: File.new("#{Rails.root}/spec/fixtures/images/image.png"))
   end
 
   let(:decorated_user) { user.decorate }
@@ -15,11 +15,5 @@ describe UserDecorator do
     subject { decorated_user.full_name_with_email }
 
     it { is_expected.to eq "Alex (test@test.com)" }
-  end
-
-  describe "#thumb_avatar" do
-    subject { decorated_user.thumb_avatar }
-
-    it { is_expected.to eq "<img class=\"round-avatar avatar-thumb\" src=\"#{user.avatar(:thumb)}\" alt=\"Image\" />" }
   end
 end

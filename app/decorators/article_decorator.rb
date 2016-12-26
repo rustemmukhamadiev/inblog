@@ -1,6 +1,6 @@
 class ArticleDecorator < ApplicationDecorator
   delegate :title, :text
-  delegate :thumb_avatar, :username, :full_name, to: :user, prefix: true
+  delegate :round_thumb_avatar, :username, :full_name, to: :user, prefix: true
 
   def description
     text.truncate(280, separator: " ")

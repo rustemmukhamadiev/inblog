@@ -14,3 +14,5 @@
 #= require fragments
 
 $(document).foundation()
+
+new FilePreview(el) for el in $("[data-file-preview]")
