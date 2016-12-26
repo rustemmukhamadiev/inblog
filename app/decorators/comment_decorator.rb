@@ -1,6 +1,6 @@
 class CommentDecorator < ApplicationDecorator
   delegate :text
-  delegate :thumb_avatar, :username, :full_name, to: :user, prefix: true
+  delegate :round_thumb_avatar, :username, :full_name, to: :user, prefix: true
 
   def posted_by
     "#{user.full_name} | #{formatted_created_at} ago"

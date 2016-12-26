@@ -2,7 +2,7 @@ ul.right.user-menu
   - if user_signed_in?
     li.has-dropdown
       a.user-dropdown(href="#")
-        = current_user.thumb_avatar
+        = current_user.round_thumb_avatar
         = current_user.full_name_with_email
       ul.dropdown
         li.drops

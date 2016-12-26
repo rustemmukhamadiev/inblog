@@ -7,7 +7,7 @@
 
     .article-info
       .left
-        = article.user_thumb_avatar
+        = article.user_round_thumb_avatar
         span.posted-by
           = link_to "#{article.user_full_name} | #{article.formatted_created_at} ago",
             username_articles_path(article.user_username)

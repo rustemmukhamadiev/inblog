@@ -14,8 +14,9 @@
           label
             | Current avatar
           .avatar-medium.avatar-preview
-            = image_tag current_user.avatar_url(:medium)
-          = f.input :avatar, as: :file
+            = image_tag(current_user.image_url, data: { "file-preview-container": "image" }, style: "width: 200px")
+          = f.hidden_field :image, value: current_user.to_model.cached_image_data
+          = f.input :image, as: :file, input_html: { data: { "file-preview": "image" } }
           = f.input :full_name, required: true, autofocus: true
           = f.input :username, required: true
           = f.input :email, required: true

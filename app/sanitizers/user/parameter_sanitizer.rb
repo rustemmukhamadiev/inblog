@@ -6,7 +6,7 @@ class User
       email
       password
       password_confirmation
-      avatar
+      image
     ).freeze
 
     def sign_up

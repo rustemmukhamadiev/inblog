@@ -8,9 +8,9 @@
 #= require jquery_ujs
 #= require foundation
 #= require current_user
-#= require skim
-#= require_tree ../templates
 #= require_tree .
 #= require fragments
 
 $(document).foundation()
+
+new FilePreview(el) for el in $("[data-file-preview]")

@@ -7,7 +7,7 @@ feature "Update Account" do
   scenario "User updates account with valid data" do
     visit edit_user_registration_path(current_user)
 
-    attach_file("Avatar", "#{Rails.root}/spec/fixtures/images/image.png")
+    attach_file("Image", "#{Rails.root}/spec/fixtures/images/image.png")
     fill_form(:user, full_name: "New Name")
 
     click_on "Update"
